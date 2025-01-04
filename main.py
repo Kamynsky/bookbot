@@ -1,7 +1,6 @@
 def openbook(book):
     with open(book) as f:
         book_content=f.read()
-        print(book_content)  
         return book_content
 def wordcounts(book_content):
     word_count=len(book_content.split())
@@ -24,6 +23,7 @@ def charcount(book_content):
     
 
     
+print("--- Begin report of books/frankenstein.txt ---")
 book_content=openbook("books/frankenstein.txt")
 wordcounts(book_content)
 charcount(book_content)
